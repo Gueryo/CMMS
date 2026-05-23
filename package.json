@@ -5,17 +5,9 @@
   "scripts": {
     "prebuild": "node scripts/prebuild-env.js && node scripts/verify-build-env.js",
     "build": "next build",
-    "build:railway": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start",
-    "start:railway": "sh scripts/railway-start.sh",
-    "postinstall": "echo 'Dependencies installed'",
-    "db:init": "node scripts/init-db.js",
-    "db:push": "echo 'Database schema is managed by schema.sql - run npm run db:init'",
-    "db:migrate": "echo 'Database schema is managed by schema.sql - run npm run db:init'",
-    "db:studio": "echo 'Prisma Studio not available without migrations'",
-    "db:seed": "echo 'Seeding not configured'"
+    "start": "next start"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
